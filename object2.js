@@ -3,7 +3,7 @@ tinderUser={}
 tinderUser.id="123abc"
 tinderUser.name="sammy"
 tinderUser.isLoggedIn=false
-
+ 
 //console.log(tinderUser)
 const regularUser={
     email:"somegmail.com",
@@ -23,7 +23,7 @@ const obj4={5:"c",6:"d"}
 
 
 //const obj3={obj1,obj2}
-//const obj3=Object.assign({},obj1,obj2,obj4)
+ //const obj3=Object.assign({},obj1,obj2,obj4)
 const obj3={...obj1,...obj2}
 //console.log(obj3); 
 const user=[
@@ -35,8 +35,9 @@ const user=[
     }
 ]
 
-user[1].email
+//user[1].email
 console.log(tinderUser);
 console.log(Object.keys(tinderUser));
+console.log(Object.entries(tinderUser));
 ContentVisibilityAutoStateChangeEvent.log(tinderUser)
 
