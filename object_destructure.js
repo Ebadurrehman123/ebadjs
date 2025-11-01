@@ -12,3 +12,12 @@ const navbar=()=>{
 
 }
 navbar(cmpany="ebad")
+
+
+{
+    name:"ebad",
+    "coursename" : "ebad",
+}
+
+
+
