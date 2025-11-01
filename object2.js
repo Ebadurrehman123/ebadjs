@@ -9,7 +9,7 @@ const regularUser={
     email:"somegmail.com",
     fullname:{
         userfullname:{
-            firstname:"ebad",
+            firstname:" ebad",
             lastname:"rehman"
         }
 
@@ -23,21 +23,36 @@ const obj4={5:"c",6:"d"}
 
 
 //const obj3={obj1,obj2}
- //const obj3=Object.assign({},obj1,obj2,obj4)
-const obj3={...obj1,...obj2}
+//const obj3=Object.assign({},obj1,obj2,obj4)
+//const obj3={...obj1,...obj2}
 //console.log(obj3); 
+
+//user[1].email
+//console.log(tinderUser);
+//console.log(Object.keys(tinderUser));
+//console.log(Object.entries(tinderUser));
 const user=[
     {
         id:1,
-        email:"urrehmanebad01",
-
+        email:"google.com"
+    },
+    {
 
     }
+
 ]
 
 //user[1].email
-console.log(tinderUser);
-console.log(Object.keys(tinderUser));
-console.log(Object.entries(tinderUser));
-ContentVisibilityAutoStateChangeEvent.log(tinderUser)
+//console.log(tinderUser);
+//console.log(Object.keys(tinderUser))
+//console.log(Object.entries(tinderUser))
 
+const course={
+    coursename:"javascript",
+    price:"999",
+    courseinstrutor:"sir hitesh"
+
+}
+//course.courseinstrutor
+const{courseinstrutor:instructor}=course
+console.log(instructor)
