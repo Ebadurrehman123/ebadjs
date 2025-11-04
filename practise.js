@@ -1,7 +1,7 @@
 //name="ebadurrehman"
 //age=22
 //console.log(`my name is ${name} and my age is ${age}`)
-function addtwonumber(number1,number2){
+/*function addtwonumber(number1,number2){
     let result=number1+number2
     //return result
    // return number1+number2
@@ -20,4 +20,14 @@ function userlogin(user){
 
 
 }
-userlogin("ebad")
+userlogin("ebad")*/
+const mysym=Symbol("key1");
+const jsuser={
+    name:"ebadurrehman",
+    age:18,
+    location:"pakistan",
+    email:"urrehmanebad",
+    [mysym]: "mysecret value"
+};
+
+console.log(jsuser)

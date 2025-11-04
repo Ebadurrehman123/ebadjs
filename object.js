@@ -38,3 +38,6 @@ Jsuser.greetingtwo=function(){
 console.log(Jsuser. greeting());
 console.log(Jsuser.greetingt)
 
+
+
+
