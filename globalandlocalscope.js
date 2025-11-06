@@ -1,4 +1,4 @@
-var c=300 
+/*var c=300 
 if (true){
     let a=10
     const b=20
@@ -7,7 +7,7 @@ if (true){
 //console.log(a);
 //console.log(b);
 //console.log(c);
-/*function one(){
+function one(){
     const username="ebad"
     function two(){
         const website="youtube"
@@ -15,10 +15,10 @@ if (true){
 
     }
     //console.log(website);
-   // two()
+    two()
 }
 
-one()*/
+one()
 
 if(true){
     const username="ebad"
@@ -28,6 +28,18 @@ if(true){
 
     }
     //console.log(website)
-}
-//console.log(username);
+ }
+console.log(username);
 //+++++++++++++++++++++++++++intersting+++++++++++++++++++
+*/
+
+function addone(num){
+    return num+1
+
+}
+addone(5)
+const addtwo= function(num){
+    return num+2
+}
+
+console.log(addone(5))
