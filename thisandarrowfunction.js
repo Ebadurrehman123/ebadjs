@@ -28,8 +28,15 @@ chai()
 //console.log(addtwo(3,4 ))
 
 //const addtwo=(num1,num2)=> (num1+num2)
-const addtwo=(num1,num2)=>({username:"ebadurrehman"})
+//const addtwo=(num1,num2)=>({username:"ebadurrehman"})
 
-console.log(addtwo(3,4))
+//console.log(addtwo(3,4))
+ 
 
+// immediately invoked function expression (iife)
 
+(function chai(){
+    console.log('DB connected');
+})()
+
+()()

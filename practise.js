@@ -20,7 +20,7 @@ function userlogin(user){
 
 
 }
-userlogin("ebad")*/
+userlogin("ebad")
 const mysym=Symbol("key1");
 const jsuser={
     name:"ebadurrehman",
@@ -30,4 +30,15 @@ const jsuser={
     [mysym]: "mysecret value"
 };
 
-console.log(jsuser)
+console.log(jsuser)*/
+
+function loginusername(username="ebadurrehman"){
+
+
+    if (username==undefined){
+        console.log("pls enter a name")
+    }
+    return `${username} just login`
+
+}
+console.log(loginusername())
