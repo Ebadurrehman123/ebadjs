@@ -10,7 +10,7 @@ const user={
 }
 /*user.welcomemessage()
 user.username="sam"
-user.welcomemessage()*/
+user.welcomemessage()
 
 console.log(this)
 
@@ -20,3 +20,16 @@ function chai(){
 }
 
 chai()
+*/
+//const addtwo=(num1,num2)=>{
+  //  return num1+num2
+
+//}
+//console.log(addtwo(3,4 ))
+
+//const addtwo=(num1,num2)=> (num1+num2)
+const addtwo=(num1,num2)=>({username:"ebadurrehman"})
+
+console.log(addtwo(3,4))
+
+
