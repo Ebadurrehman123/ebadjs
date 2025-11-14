@@ -39,7 +39,7 @@ handobject({
 })
 const mynewarray=[200,333,44,555]
 function returnsecondvalue(getarray){
-    return getarray[2]
+     return getarray[2]
 
 }
 //console.log(returnsecondvalue(mynewarray));]

@@ -1,3 +1,6 @@
+let a=333
+const b=88 
+
 /*var c=300 
 if (true){
     let a=10
