@@ -26,7 +26,7 @@ one()
 if(true){
     const username="ebad"
     if(username=="ebad"){
-        const website="youtube"
+         const website="youtube"
         console.log(username+website)
 
     }
@@ -34,7 +34,7 @@ if(true){
  }
 console.log(username);
 //+++++++++++++++++++++++++++intersting+++++++++++++++++++
-*/
+
 
 function addone(num){
     return num+1
@@ -46,3 +46,39 @@ const addtwo= function(num){
 }
 
 console.log(addone(5))
+
+function one(){
+    const username="ebadurrehman"
+    function two(){
+        const website="youtube"
+        console.log(username);
+
+    }
+  //  console.log(website);
+    two()
+} 
+
+//one()
+if(true){
+    const username="ebadurrehman"
+    if (username==="ebad"){
+        const website="youtube"
+        console.log(username+website);
+    }
+  //   console.log(website);
+}*/
+//console.log(username);
+
+// +++++++++++++++++++++intresting++++++++++++++
+console.log(addone(5))
+function addone(num){
+    return num+1
+}
+addone(5)
+//expressions 
+console.log(addtwo(6))
+const addtwo=function(num){
+    return num+2
+}
+
+addtwo(5)
