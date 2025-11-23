@@ -32,13 +32,16 @@ const jsuser={
 
 console.log(jsuser)*/
 
-function loginusername(username="ebadurrehman"){
+//function username(){
+    console.log("ebad")
+//}
 
+//username()
 
-    if (username==undefined){
-        console.log("pls enter a name")
-    }
-    return `${username} just login`
+function loginusername(){
+    if (username=="ebad")
+        console.log("you name is ebad")
+
 
 }
-console.log(loginusername())
+console.log(loginusername("ebad"))
