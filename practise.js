@@ -33,15 +33,26 @@ const jsuser={
 console.log(jsuser)*/
 
 //function username(){
-    console.log("ebad")
+    //console.log("ebad")
 //}
 
-//username()
 
-function loginusername(){
-    if (username=="ebad")
-        console.log("you name is ebad")
 
+//function loginusername(){
+  //  if (username=="ebad")
+    //    console.log("you name is ebad")
+
+
+//}
+//console.log(loginusername("ebad"))
+function username(name="ebad"){
+    if(name===undefined){
+        console.log("enter your name")
+        return 
+    }
+    return `${name} just login`
+    return
 
 }
-console.log(loginusername("ebad"))
+
+console.log(username("ebad"))
