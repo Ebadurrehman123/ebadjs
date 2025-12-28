@@ -1,23 +1,31 @@
-function saymyname(){
-    console.log("ebadurrehman")
+//function saymyname(){
+  //  console.log("ebadurrehman")
 
-}
+//}
 //saymyname()
-
+/*
 
 function loginusermessage(username="sam"){
     if (username===undefined){
         console.log("enter username")
-        return
+        return   
 
     }
     return `${username} just login`
 
+}*/
+function username(name="ebad"){
+    if(!name){
+        console.log("pls enter a name");
+        return 
+    }
+    return `${username} ,just login`
 }
+console.log(username("ebad"))
 //console.log(loginusermessage())
 //console.log(loginusermessage("ebad"))
 
-
+/*
 function calculatecartprice(val1,val2,...num1){
     return num1
 

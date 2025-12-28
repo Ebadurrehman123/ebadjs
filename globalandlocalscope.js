@@ -1,8 +1,11 @@
 let a=333
 const b=88 
-
-/*var c=300 
-if (true){
+var c=300 
+//{}jab ap ka pas curly braces ata hai to is ko kehta hai scope ya jab function ka sath ya pir if else
+//  ka sat ata hai to isko khetay hai scope
+//Global scope jo bhi bhir lika gai wo global scope hai wo value andr available hoti hai
+//Block scope jo bhi andr lika gai. wo jo andr linkta hai wo bahir nai jaati
+ if (true){
     let a=10
     const b=20
     var c=30
@@ -66,7 +69,7 @@ if(true){
         console.log(username+website);
     }
   //   console.log(website);
-}*/
+} 
 //console.log(username);
 
 // +++++++++++++++++++++intresting++++++++++++++
