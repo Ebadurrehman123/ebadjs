@@ -1,42 +1,23 @@
-const user={
-    username:"ebadurrehman",
-    price:399,
+/*In JavaScript, the this keyword refers to an object.
 
-  
-    welcomemessage:function(){
-        console.log(`${this.username}, welcome to website`)
-        console.log(this);s
-    }
-}
-/*user.welcomemessage()
-user.username="sam"
-user.welcomemessage()
+The this keyword refers to different objects depending on how it is used:
 
-console.log(this)
+Alone, this refers to the global object.
+In a function, this refers to the global object.
+In a function, in strict mode, this is undefined.
+In an object method, this refers to the object.
+In an event, this refers to the element that received the event.
+Methods like call(), apply(), and bind() can refer this to any object.
+Note
+this is not a variable.
 
-function chai(){
-    let username="ebad"
-    console.log(this.username)
-}
+this is a keyword.
 
-chai()
-*/
-//const addtwo=(num1,num2)=>{
-  //  return num1+num2
+You cannot change the value of this.
 
-//}
-//console.log(addtwo(3,4 ))
+this in a Method
+When used in an object method, this refers to the object.
 
-//const addtwo=(num1,num2)=> (num1+num2)
-//const addtwo=(num1,num2)=>({username:"ebadurrehman"})
+In the example on top of this page, this refers to the person object.
 
-//console.log(addtwo(3,4))
- 
-
-// immediately invoked function expression (iife)
-
-(function chai(){
-    console.log('DB connected');
-})()
-
-()()
+Because the fullName method is a method of the person object.

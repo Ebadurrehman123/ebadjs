@@ -44,15 +44,15 @@ console.log(jsuser)*/
 
 
 //}
-//console.log(loginusername("ebad"))
-function username(name="ebad"){
-    if(name===undefined){
-        console.log("enter your name")
-        return 
+//console.log(loginusern
+
+function access(){
+    const user2="ebad ur rehman"
+    function access1(){
+        const website1="youtube"
+        console.log(user2  +  website1);
     }
-    return `${name} just login`
-    return
-
+    //console.log(website1);
+    access1()
 }
-
-console.log(username("ebad"))
+(access());
