@@ -46,7 +46,7 @@ console.log(jsuser)*/
 //}
 //console.log(loginusern
 
-function access(){
+/*function access(){
     const user2="ebad ur rehman"
     function access1(){
         const website1="youtube"
@@ -56,3 +56,28 @@ function access(){
     access1()
 }
 (access());
+
+
+
+const user3={
+    username2:"ebadurrehman",
+    price:300,
+    welcome:function(){
+        console.log(`${this.username2},${this.price} welcome to website` )
+
+    }
+}
+
+user3.welcome()
+user3.username2="waliullah"
+user3.welcome()
+
+*/
+//this object ka andr kaam kr ra hau lekin function kay andr nai
+
+function chai1(){
+    const user="ebad ur rehman"
+    console.log(this.user)
+}
+
+chai()
