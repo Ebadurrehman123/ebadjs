@@ -1,5 +1,6 @@
 //Immediate invoke function expressions(IIFE)
 //iska matlab jasey hi apnay function lika is ko forun execute kr wao
+//named iife
 (function chai(){
     console.log('DB connected');
 })();
@@ -20,9 +21,12 @@
 //lekin is ko pta nai hai ka context rok na kha hai
 //asi situation ma js ma end krna parta hai ';'laga na parta hai
 //iifi ko as a function hi dak na hai
-
+//unnamed iife
 ( (name)=>{
     console.log(`DB3 CONNECTED ${name}`);
 
 })('Ebad ur rehman')
+
+
+
 
