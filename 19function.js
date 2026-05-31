@@ -14,14 +14,20 @@ function loginusermessage(username="sam"){
     return `${username} just login`
 
 }*/
-function username(name="ebad"){
+function username(name){
+    //if(name===undefined){
     if(!name){
         console.log("pls enter a name");
-        return 
+        return
+
     }
-    return `${username} ,just login`
+
+    return `${name} just login`
 }
-console.log(username("ebad"))
+//console.log(username("ebad"))
+console.log(username())
+
+
 //console.log(loginusermessage())
 //console.log(loginusermessage("ebad"))
 
@@ -52,3 +58,11 @@ function returnsecondvalue(getarray){
 }
 //console.log(returnsecondvalue(mynewarray));]
 //console.log(returnsecondvalue([22,33,44,55,66,77]))
+
+*/
+function addtwonumber(number1,number2){
+    let result=number1 + number2
+    return result
+}
+const result = addtwonumber(3,5)
+console.log("result:",result);

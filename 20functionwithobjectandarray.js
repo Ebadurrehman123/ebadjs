@@ -26,8 +26,7 @@ console.log(calculate(200,333,221,4000))
 
 const user={
     name:"ebad",
-    price:150,
-}
+    price:150,}
 function handleobject(anyobject){
     console.log(`username is ${anyobject.name} and price is ${anyobject.price}`);
 
@@ -43,9 +42,30 @@ handleobject({
 //array 
 
 const myarray=[200,300,555,900]
-function returnfirstvalue(array){
-    return array[1]
+function returnfirstvalue(getarray){
+    return getarray[1]
 }
 console.log(returnfirstvalue(myarray));
 
- 
+ function calculatecartprice(num1){
+    return num1
+ }
+ console.log(calculatecartprice(2))
+
+
+ ////////////////////////////===========
+ // (...)->REST OR SPREAD OPERATOR
+ //REST
+ function cart(...num1){
+    return num1
+ }
+ console.log(cart(200,300,200,400))
+
+ function cart1(val1,val2,...num4){
+    return num4
+ }
+ console.log(cart1(200,300,400,500,600,700))
+
+
+
+  
