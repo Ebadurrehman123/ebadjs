@@ -67,5 +67,28 @@ console.log(returnfirstvalue(myarray));
  console.log(cart1(200,300,400,500,600,700))
 
 
+//practice+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+const practice={
+    name:"ebad ur rehman",
+    institute:"szabist",
+    semester:"fourth"
+}
+function handle(practice){
+    console.log(`Name is ${practice.name} and instition ${practice.institute}`)
+}
 
-  
+handle(practice)
+
+
+
+const showroom={
+    carname:"toyota",
+    model:"gli",
+    year:2008,
+    color:"black"
+}
+function handleobjectpractice(anyobject){
+    console.log(`car name is ${anyobject.carname} and model is ${anyobject.model}
+     and year is${anyobject.year} color is ${anyobject.color}`)
+}
+handleobjectpractice(showroom)

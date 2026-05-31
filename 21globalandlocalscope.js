@@ -1,6 +1,6 @@
 let a=333
 const b=88 
-var c=300 
+//var c=300 
 //{}jab ap ka pas curly braces ata hai to is ko kehta hai scope ya jab function ka sath ya pir if else
 //  ka sat ata hai to isko khetay hai scope
 //Global scope jo bhi bhir lika gai wo global scope hai wo value andr available hoti hai
@@ -9,11 +9,12 @@ var c=300
     let a=10
     const b=20
     var c=30
+    console.log("inner:",a);
 }
-//console.log(a);
+console.log(a);
 //console.log(b);
 //console.log(c);
-function one(){
+/*function one(){
     const username="ebad"
     function two(){
         const website="youtube"
