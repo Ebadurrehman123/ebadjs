@@ -22,7 +22,7 @@ In the example on top of this page, this refers to the person object.
 
 Because the fullName method is a method of the person object.
 THIS current context ko refer krta hai
-*/
+
 const user={
     username:"ebad",
     price:444,
@@ -37,15 +37,26 @@ user.welcomemessage()
 //console.log(this)
 
 // function
-/*function chai(){
+function chai(){
     let username="ebad"
     console.log(this.username);
 }   
 chai()   
-//object ka andr kaam kr ra hai lekin function kay
+//IMPORTANT this object ka andr kaam kr ra hai lekin function kay
 //andr nai
-
+//function ko declare ksa krta especially arrow function ka throw
 //ARROW FUNCTION
+/*
+const chai=function(){
+    let username="ebad"
+    console.log(this.username);
+}
+
+basic arrow function
+() => {}    
+is ko name ya vriable ka and hold kr skt hai  
+const addtwo=()=>{}
+ 
 const chai=()=>{
     let username="ebad"
     console.log(this);
@@ -54,16 +65,16 @@ const chai=()=>{
 
 //pure arrow function
 //basic arrow function
-//const addtwo=(num1,num2)=>{
-  //  return num1 + num2
-//}
+const addtwo=(num1,num2)=>{
+    return num1 + num2
+}
 
 //console.log(addtwo(3,5))
-
+//important
 //implicit return ma parenthesis use nai krta
 // agr curly braces use kiya to return likna parray ga
-//const addtwo=(num1,num2)=>num1+num2
-//console.log(addtwo(3,4))
+const addtwo=(num1,num2)=>num1+num2
+console.log(addtwo(3,4))
 //agr 
  
 //agr object ko return kr na hota to paranthesis ka baad braket lgana hota
@@ -74,3 +85,20 @@ const add=(num1,num2) => ({username:"ebad"})
 console.log(add())
  
 */
+const user={
+    name:"ebadurrehman",
+    institutionname:"szabist",
+    message:function(){
+        console.log(`my name is ${this.name} and institution name is ${this.institutionname}`)
+    }
+}
+user.message()
+user.name="sam"
+user.message()
+
+ const chai=()=>{
+    username="saad",
+    institutionn="mehrn"
+    console.log(this)
+ }
+ chai()
