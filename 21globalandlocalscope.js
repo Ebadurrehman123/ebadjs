@@ -14,7 +14,7 @@ const b=88
 console.log(a);
 //console.log(b);
 //console.log(c);
-/*function one(){
+function one(){
     const username="ebad"
     function two(){
         const website="youtube"
@@ -34,7 +34,7 @@ if(true){
         console.log(username+website)
 
     }
-    //cons ole.log(website)
+    //console.log(website)
  }
 console.log(username);
 //+++++++++++++++++++++++++++intersting+++++++++++++++++++
@@ -45,6 +45,7 @@ function addone(num){
 
 }
 addone(5)
+//expressions
 const addtwo= function(num){
     return num+2
 }
@@ -79,8 +80,9 @@ function addone(num){
     return num+1
 }
 addone(5)
-//expressions 
+
 console.log(addtwo(6))
+//expression
 const addtwo=function(num){
     return num+2
 }

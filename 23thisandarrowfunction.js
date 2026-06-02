@@ -34,14 +34,14 @@ const user={
 user.welcomemessage()
 user.username="sam"
 user.welcomemessage()
-console.log(this)
+//console.log(this)
 
 // function
-function chai(){
+/*function chai(){
     let username="ebad"
     console.log(this.username);
 }   
-chai()   */
+chai()   
 //object ka andr kaam kr ra hai lekin function kay
 //andr nai
 
@@ -73,3 +73,4 @@ const add=(num1,num2) => ({username:"ebad"})
 
 console.log(add())
  
+*/

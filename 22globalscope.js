@@ -18,21 +18,21 @@ This helps prevent unintended variable overwrites and promotes better code organ
 
 nested scope*/
 function one(){
-    const user1="ebad"
+    const user1= "ebad"
 
     function two1(){
         const website1="youtube"
         console.log(user1);
         //console.log(website1)
-    }
+    } 
     //console.log(website1);
-    two1()
+     two1()
 }
 one()
 
 
 //+++++++++++++++++++++++interesting++++++
-function addone(num){
+/*function addone(num){
     return num + 1
 }
 console.log(addone(5))
@@ -42,3 +42,4 @@ const add=function(num){
     return num + 2
 }
 console.log(add(5))
+*/ 
