@@ -22,7 +22,7 @@ In the example on top of this page, this refers to the person object.
 
 Because the fullName method is a method of the person object.
 THIS current context ko refer krta hai
-
+*/
 const user={
     username:"ebad",
     price:444,
@@ -46,15 +46,15 @@ chai()
 //andr nai
 //function ko declare ksa krta especially arrow function ka throw
 //ARROW FUNCTION
-/*
+
 const chai=function(){
     let username="ebad"
     console.log(this.username);
 }
 
-basic arrow function
-() => {}    
-is ko name ya vriable ka and hold kr skt hai  
+//basic arrow function
+//() => {}    
+//is ko name ya vriable ka and hold kr skt hai  
 const addtwo=()=>{}
  
 const chai=()=>{
@@ -84,7 +84,7 @@ const add=(num1,num2) => ({username:"ebad"})
 
 console.log(add())
  
-*/
+
 const user={
     name:"ebadurrehman",
     institutionname:"szabist",

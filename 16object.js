@@ -10,6 +10,8 @@ const mysym=Symbol("key1")
 const Jsuser={
     name:"ebadurrehman",
     "full name":"hitesh choudry",
+//jab ap symbol ko refer kr ra ho to sqare bracket ma use krna parta hai
+//or jab access krna ho to square bracket dana hota hai
     [mysym]:"mykey1",
     age:18,
     location:"pakistan",
