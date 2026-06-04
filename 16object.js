@@ -5,7 +5,7 @@
 
 
 //object literals
-const mysym=Symbol("key1")
+/*const mysym=Symbol("key1")
 
 const Jsuser={
     name:"ebadurrehman",
@@ -39,7 +39,29 @@ Jsuser.greetingtwo=function(){
 }
 console.log(Jsuser. greeting());
 console.log(Jsuser.greetingt)
+*/
 
 
+
+
+
+
+
+
+
+
+
+
+
+const mysys=Symbol("mysymbol");
+
+const user={
+    name:"ebad ur rehman",
+    [mysys]:"my symbol",
+    semester:"fourth"
+};
+
+console.log(user[mysys]);
+console.log(user.semester)
 
 
