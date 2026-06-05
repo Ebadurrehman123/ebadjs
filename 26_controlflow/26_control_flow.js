@@ -57,48 +57,5 @@ if(logedinfromgoogle || logedinfromEmal){
 }
 
 
-//switch case
-/*switch (key) {
-    case value:
-        
-        break;
 
-    default:
-        break;
-}
-*/
-const month=3
-switch (month) {
-    case 1:
-        console.log("january")
-        break;
-    case 2:
-        console.log("feb")
-        break;
-    case 3:
-        console.log("march")
-        break;
-    case 4:
-        console.log("april")
-        break;
-//Jab condition true ho jaye aur break execute ho, to loop wahin stop ho jata hai.
-//Uske baad loop ka code execute nahi hota.   
-        default:
-        console.log("default case match")
-        break;
-}
-const month1="january"
 
-switch (month1) {
-    case "feb":
-        console.log("feb");
-        break;
-    case "january":
-        console.log("january");
-        break;
-    case "march":
-        console.log("march");
-        break;
-        default:("default case march")
-        break;
-}

@@ -7,6 +7,22 @@
 //object literals
 /*const mysym=Symbol("key1")
 
+In JavaScript, an object literal is a way to create an object
+ using curly braces {}.
+
+Basic Syntax
+const person = {
+  name: "John",
+  age: 25,
+  isStudent: true
+};
+
+Here:
+
+name, age, isStudent are properties
+"John", 25, true are their values
+
+const mysym=Symbol("key1")
 const Jsuser={
     name:"ebadurrehman",
     "full name":"hitesh choudry",
@@ -50,7 +66,7 @@ console.log(Jsuser.greetingt)
 
 
 
-
+/*
 
 
 const mysys=Symbol("mysymbol");
@@ -63,5 +79,17 @@ const user={
 
 console.log(user[mysys]);
 console.log(user.semester)
+*/
 
 
+
+const system=Symbol("myobjectkey1")
+
+const user={
+    name:"ebad ur rehman",
+    [system]:"myobject2",
+    semester:"fourth",
+    cnicnumber:"4139292992",
+    city:"hyderabad",
+}
+console.log(user[system])
