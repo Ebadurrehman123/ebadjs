@@ -22,6 +22,19 @@ Here:
 name, age, isStudent are properties
 "John", 25, true are their values
 
+
+
+Symbols are useful when 
+you want object keys that are unique and do not 
+accidentally conflict with normal key
+
+
+Interview Line (important)
+
+Symbol is a unique primitive type used to 
+create hidden object properties that 
+cannot be accessed or overwritten accidentally.
+*/
 const mysym=Symbol("key1")
 const Jsuser={
     name:"ebadurrehman",
@@ -55,7 +68,7 @@ Jsuser.greetingtwo=function(){
 }
 console.log(Jsuser. greeting());
 console.log(Jsuser.greetingt)
-*/
+
 
 
 
