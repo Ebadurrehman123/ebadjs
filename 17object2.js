@@ -48,6 +48,9 @@ user[1].email
 console.log(tinderUser);
 //console.log(Object.keys(tinderUser));
 //console.log(Object.entries(tinderUser));
+
+
+
 const user=[
     {
         id:1,
@@ -64,6 +67,19 @@ const user=[
 //console.log(Object.keys(tinderUser))
 //console.log(Object.entries(tinderUser))
 
+//Rule to remember
+//[] = Array
+//{} = Object
+//user[0] → first object in array
+//user[0].email → property of first object
+
+//This pattern (array of objects) is extremely 
+//common in APIs and interviews.
+
+
+
+//Excellent! This is called object destructuring.
+
 const course={
     coursename:"javascript",
     price:"999",
@@ -75,6 +91,35 @@ const{courseinstrutor:instructor}=course
 console.log(instructor)
 
 
+//Why use destructuring?
+
+//Without destructuring:
+
+//console.log(course.coursename);
+//console.log(course.price);
+//console.log(course.courseinstrutor);
+
+//With destructuring:
+
+//const { coursename, price, courseinstrutor } = course;
+
+//console.log(coursename);
+//console.log(price);
+//console.log(courseinstrutor);
+
+//Less typing and very common in React, APIs, and interviews.
+
+//Interview Rule
+//const { propertyName: newVariableName } = object;
+
+//Example:
+
+//const { courseinstrutor: instructor } = course;
+
+//means:
+
+//const instructor = course.courseinstrutor;
+//Both give the same result.
 
 //practice
 
@@ -90,6 +135,12 @@ const object1={name:"ebad",age:"18"}
 const object2={name:"saad",age:"28"}
 const object3={name:"wali",age:"23"}
 
+const course2={
+    courseinstrutor2:"sir chai wala",
+    coursename2:"javascript",
+    nameofstudent2:"ebadurrehman",
+    semester:"fouth"
+}
+const{courseinstrutor2:instructor2,coursename2:name2,}=course2
+console.log(instructor2,name2)
 
-const object4={object1,object2}
-console.log(object4)
