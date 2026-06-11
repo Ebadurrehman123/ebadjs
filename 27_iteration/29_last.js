@@ -19,7 +19,10 @@ const newNums=myNums.filter(( nums)=>{
 console.log(newNums)
 
 */
-const myNums=[1,2,3,4,5,6,7,8,9,10]
+
+
+
+/*const myNums=[1,2,3,4,5,6,7,8,9,10]
 const newNums=[]
 myNums.forEach((nums)=>{
     if(nums>4){
@@ -29,3 +32,25 @@ myNums.forEach((nums)=>{
 })
 
 console.log(newNums);
+*/
+const books=[
+    {title:'book seven',genre:'History',publish:1986,
+        edition:'1996'},
+    {title:'book seven',genre:'science',publish:2003,
+        edition:'1996'},
+    {title:'book seven',genre:'History',publish:1986,
+        edition:'1996'},
+    {title:'book seven',genre:'geograpy',publish:2011,
+        edition:'1996'},
+    {title:'book seven',genre:'math',publish:1986,
+        edition:'1996'},
+    {title:'book seven',genre:'urdu',publish:1986,
+        edition:'1996'},
+    {title:'book seven',genre:'computer',publish:2000,
+        edition:'1996'},
+
+];
+let userbooks=books.filter((bk)=>bk.genre==='History')
+
+userbooks=books.filter( (bk)=>{return bk.publish >= 2000})
+console.log(userbooks);
