@@ -45,6 +45,15 @@ const myobj={
     //console.log(key,':-',value);
 //}
 
+const map=new Map9()
+map.set('In','India')
+map.set('USA','United States of America')
+map.set('Fr','France')
+map.set('In','India')
+for (const key in map) {
+    console.log(key);
+}
 
+ 
 
 
