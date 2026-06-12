@@ -38,7 +38,7 @@ const books=[
         edition:'1996'},
     {title:'book seven',genre:'science',publish:2003,
         edition:'1996'},
-    {title:'book seven',genre:'History',publish:1986,
+    {title:'book seven',genre:'History',publish:2004,
         edition:'1996'},
     {title:'book seven',genre:'geograpy',publish:2011,
         edition:'1996'},
@@ -52,5 +52,9 @@ const books=[
 ];
 let userbooks=books.filter((bk)=>bk.genre==='History')
 
-userbooks=books.filter( (bk)=>{return bk.publish >= 2000})
+//userbooks=books.filter( (bk)=>{return bk.publish >= 2000})
+userbooks=books.filter((bk )=>{
+   return bk.publish >=2000 && bk.genre==='History'
+})
 console.log(userbooks);
+

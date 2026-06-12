@@ -1,6 +1,9 @@
 //for of
 //for (const iteration of object) {
 //}
+//jab obj ma loop laga na hoga to for in
+//arrays pr loop lagana hoga to for of lekin arrays ka upper or
+//or bhi loops hai 
 
 //["","",""]
 //[{},{},{}]
@@ -45,15 +48,6 @@ const myobj={
     //console.log(key,':-',value);
 //}
 
-const map=new Map9()
-map.set('In','India')
-map.set('USA','United States of America')
-map.set('Fr','France')
-map.set('In','India')
-for (const key in map) {
-    console.log(key);
-}
 
- 
 
 

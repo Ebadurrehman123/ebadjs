@@ -25,5 +25,16 @@ for (const key in myobject) {
 const programming=['js','phython','java','cpp']
 for (const key in programming) {
    // console.log(key)
-   console.log(programming[key])
+   console.log(programming[key]);
 }
+
+ const map=new Map9()
+map.set('In','India')
+map.set('USA','United States of America')
+map.set('Fr','France')
+map.set('In','India')
+for (const key in map) {
+   // console.log(key);
+}
+
+ 
