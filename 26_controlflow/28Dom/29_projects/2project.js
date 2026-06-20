@@ -13,10 +13,6 @@ form.addEventListener('submit',function(e){
       const bmi=  (weight / ((height * height)/10000)).toFixed(2)
       //shoow the results
       result.innerHTML=`<span>${bmi}</span>`;
-    }if(bmi>18){
-        result.innerHTML=`you weight is less than 18${bmi}`
-    } else{
-        result.innerHTML=`${bmi}`;
     }
     
-});
+}); 

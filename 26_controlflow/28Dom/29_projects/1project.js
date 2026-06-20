@@ -1,4 +1,4 @@
-const button=document.querySelectorAll('.button')
+/*const button=document.querySelectorAll('.button')
 const body=document.querySelector('body')
 
 button.forEach(function(button){
@@ -23,3 +23,14 @@ button.forEach(function(button){
         }
     });
 });
+*/
+const buttton=document.querySelectorAll('.button')
+const body=document.querySelector('body')
+
+buttton.forEach(function(button){
+    console.log(button);
+    button.addEventListener('click'),function(e){
+        console.log(e);
+        console.log(e.target);
+    }
+})
