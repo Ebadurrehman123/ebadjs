@@ -1,3 +1,4 @@
+
  <!DOCTYPE html>
  <html lang="en">
  <head>
@@ -18,13 +19,16 @@
         <p>you have 10 attempts tooguess the right number</p>
     </br>
     <form class="form">
-        <label2 for="guessField" id="guess">Guess a number</label>
+        <label for="guessField" id="guess">Guess a number</label>
             <input type="text" id="guessField" class="guessField">
             <input type="submit" id="subt" value="submit guess" class ="guessubmit">
     </form>
     <div class="resultparas">
-        
+        <p>previous Guesses</p> <span class="guesses"></span>
+        <p>Guesses remaining: <span class="lastResult">10</span></p>
+        <p class="lowOrHi"></p>
     </div>
     </div>
+    <script src="4project.js"></script>
  </body>
  </html>
