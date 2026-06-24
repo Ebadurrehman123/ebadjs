@@ -29,3 +29,29 @@ const myshoppingcart=[
 const pricetoPay=myshoppingcart.reduce( (acc,item )=>acc+item.
 price,0)
 console.log(pricetoPay)
+
+/*
+const mynum=[1,2,3,4,5,6]
+const mytotal=mynum.reduce(function(accumulator,currentvalue){
+    console.log(`accu ${accumulator} and  current value${currentvalue}`)
+    return accumulator+currentvalue
+},0) 
+*/
+
+const myshoppingcart1=[{
+    courseName1:"DataScience",
+    price:1223
+
+},
+{
+    courseName1:"Web Devolpment",
+    name:"sir Hitesh"
+
+},
+{
+    courseName1:"DataAnalyst",
+    price:12999
+
+}]
+const pricetoPay1=myshoppingcart1.reduce((acc,item)=>acc+item.price,0)
+console.log(pricetoPay1) 

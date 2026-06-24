@@ -1,4 +1,4 @@
-/*const coding=['python','java','ruby','js']
+const coding=['python','java','ruby','js']
 const value = coding.forEach((item ) =>{
     console.log(item)
     return item
@@ -6,7 +6,7 @@ const value = coding.forEach((item ) =>{
 console.log(value)
 //ya ya pr return kuch bhi nai krr ra
 //for each return nai krta
-*/
+
 
 
 //filter operation kiya hota hai
@@ -58,3 +58,37 @@ userbooks=books.filter((bk )=>{
 })
 console.log(userbooks);
 
+let library=[{
+    subject:"history",
+    gene:1999
+},
+{
+
+    subject:"pst",
+    gene:2014
+},
+{
+    subject:"computer",
+    gene:2000
+
+},
+{
+    subject:"english",
+    gene:2002
+
+}]
+
+let library1=library.filter((bk1)=>{
+   return bk1.gene===2000
+
+})
+console.log(library1)
+
+const mynums=[1,2,3,4,5,6,7,8,9]
+const newnums=[]
+mynums.forEach((nums)=>{
+    if(nums>4){
+        newnums.push(nums)
+    }
+})
+console.log(newnums)
