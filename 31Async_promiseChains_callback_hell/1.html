@@ -13,16 +13,20 @@
     const sayebad=function(){
         console.log("ebadurehman");
     }
-    //document.querySelector('h1').innerHTML
-    //="best js series"
+    document.querySelector('h1').innerHTML
+    ="best js series"
     const changetext=function(){
         document.querySelector("h1").
         innerHTML="best js series"
     }
 
-    //setTimeout(sayebad,2000)
+    setTimeout(sayebad,2000)
     const changeMe=setTimeout(changetext,2000);
-    clearTimeout(changeMe)
+    //clearTimeout(changeMe)
     document.querySelector("#stop")
+    addEventListener('click',function(){
+        clearTimeout(changeMe)
+        console.log("stopped")
+    })
 </script>
-</html>
+</html> 
