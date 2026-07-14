@@ -8,7 +8,7 @@
 <body>
     
 </body>
-<script>
+   <script>
 //promises in java script are object
 //promise ik object hoti hai js ki andr jis ki 3 state
 //hoti hai pending resolved rejected
@@ -18,15 +18,93 @@
 //hum us promise ko complete kr skta hai or us ka andr ya to error
 //generate kr skta hai ya final result la kr a skta hai
     
-    let promise=new promise((resolve,reject)=>{
+    let promis1=new Promise((resolve,reject)=>{
         console.log("i am a promise");
-        reject("some error ocured");
+        reject("some error occured")
     });
 
 //ksi bhi promise object ko create krna ka liya
 //hum liktay hai new promise,
 //new ka badd promise kiya hai ik class hai js sa hum
 //ik naya promise create kr ra hai
+
+
+
+
+
+
+/*
+function getdata(dataid,getNextData){
+    return new Promise((resolve,reject)=>{
+        setTimeout(() => {
+            console.log("data",dataid);
+            resolve("success");
+            reject("error");
+            if(getNextData){
+                getNextData();
+            }
+        }, 5000);
+    });
+}
+*/
+
+
+
+
+const getpromise=()=>{
+    return new Promise((resolve,reject)=>{
+        console.log("i am a promise");
+//        resolve("success");
+          reject("network error")
+    });
+}
+
+let promis=getpromise();
+promis.then((res)=>{
+    console.log("promise fullfilled",res)
+});
+promise.catch((err)=>{
+    console.log("rejected",err);
+})
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 </script>
 
 
