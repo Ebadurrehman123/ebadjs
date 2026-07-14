@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+
+<script>
+
+    function asyncfun1(){
+        return new Promise((resolve,reject)=>{
+            setTimeout(() => {
+                console.log("data1")
+                resolve("success")
+                
+            },4000);
+        })
+    }
+
+
+    function asynfun2(){
+        return new Promise((resolve,reject)=>{
+            setTimeout(()=>{
+                console.log("data2");
+                resolve("success");
+            },4000);
+        });
+    }
+/*
+    console.log("fetching data1....");
+    let p1=asyncfun1();
+    p1.then((res)=>{
+        console.log(res);
+    })
+
+    console.log("fetching data2...")
+    let p2=asynfun2();
+    p2.then((res)=>{
+        console.log(res);
+    })
+
+*/
+    //phele hama 1data chaie pir us ka baad dusra data fectch ho
+    //us ka liya hum use krta hai
+    //chaining
+    //chaining means ik then ka andr dusra "then" use ho
+    //nechay wali exaple chaining ki nai hai 
+    // hogya callback hell
+    console.log("fetching data 1...")
+    let p1=asyncfun1();
+    p1.then((res)=>{
+        console.log(res);
+        console.log("fetching data2...")
+        let p2=asynfun2();
+        p2.then((res)=>{
+            console.log(res)
+        });
+    });
+
+
+///////////////////////////////////////////////////////////
+
+
+    function asyncfun3(){
+        return new Promise((resolve,reject)=>{
+            setTimeout(()=>{
+                console.log("data3")
+                resolve("success")
+            },4000);
+        });
+    };
+
+    function asyncfun4(){
+        return new Promise((resolve,reject)=>{
+            setTimeout(()=>{
+                console.log("data4")
+                resolve("success")
+            },4000);
+        });
+    };
+//calback hell
+    console.log("fecthing data3...")
+    asyncfun3().then((res)=>{
+        console.log("fectching data4...")
+        asyncfun4().then((res)=>{
+            console.log()
+        })
+    
+    })
+
+
+    /////////////////////////////////////////////
+    
+
+
+
+
+
+
+
+
+</script>
+</html>
