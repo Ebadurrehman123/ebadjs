@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    //Async-Await 2 key words hai js ka andr
+    //jin ka kaam hota hai basically asynchronus programming ko simple 
+    //bnana
+    //que ka callback hell na boht difficult kiya hwa hai
+
+    //Async keyword hum functions kay saat use krtae hai
+    //or jo async function hota hai wo return krta hai promise ko
+    //ksi bhi function ko async bna skta hai
+
+    // 
+    async function hello(){
+        console.log("hello")
+    }
+    
+    //second keyword hota hai 
+    //Await means intizar krna 
+    //Await ja pr bhi use hota hai wo pause krdata hai sorrounding async
+    //function
+    //until the promise is settled
+
+    function api(){
+        return new Promise((resolve,reject)=>{
+            setTimeout(() => {
+                console.log("weather data")
+                resolve(200);
+            }, 2000);
+        });
+    }
+    async function getweather() {
+        await api();//1st call
+        await api();//2nd
+    }
+
+////////////////////////////////////////
+
+function getdata(dataId){
+    return new Promise((resolve,reject)=>{
+        setTimeout(()=>{
+            console.log("data",dataId);
+            resolve("succcess")
+        },3000);
+    });
+}
+/*
+async function getalldata(){
+    console.log("getting data1....")
+    await getdata(1);
+    console.log("getting data2....")
+    await getdata(2);
+     console.log("getting data3...")
+    await getdata(3);
+     console.log("getting data4....")
+
+}
+*/
+//IIFE immediate invoke function expression
+
+(async function (){
+    console.log("getting data1....")
+    await getdata(1);
+    console.log("getting data2....")
+    await getdata(2);
+     console.log("getting data3...")
+    await getdata(3);
+     console.log("getting data4....")
+
+})();
+
+
+
+
+</script>
+</html>
