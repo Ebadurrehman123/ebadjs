@@ -40,6 +40,8 @@ btn.addEventListener("click",getfacts)
 
 
 //promise chaining
+/*
+
 function getfacts(){
     fetch(URL)
     .then((responses)=>{
@@ -50,3 +52,4 @@ function getfacts(){
         factpara.innerText=data.quote;
     })
 }
+*/
